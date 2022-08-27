@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-from streamlit_lottie import st_lottie
+# from streamlit_lottie import st_lottie
 import pickle
 import string
 from nltk.corpus import stopwords
@@ -40,15 +40,15 @@ model = pickle.load(open('model.pkl','rb'))
 
 
 
-# lottie animation code
-def load_lottieur(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return none
-    return r.json()
-
-lottie_coding = load_lottieur("https://assets10.lottiefiles.com/packages/lf20_4x9a2h9p.json")
-st_lottie(lottie_coding, height=200, key="Mail Animation")
+## lottie animation code
+# def load_lottieur(url):
+#     r = requests.get(url)
+#     if r.status_code != 200:
+#         return none
+#     return r.json()
+#
+# lottie_coding = load_lottieur("https://assets10.lottiefiles.com/packages/lf20_4x9a2h9p.json")
+# st_lottie(lottie_coding, height=200, key="Mail Animation")
 
 
 
